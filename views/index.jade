@@ -10,7 +10,7 @@ html
 		script(type='text/javascript', src='/js/mainjs.js')
 
 	body
-		.container.centerBack.contentShadow
+		.container.centerBack.contentShadow#maincont
 			.row
 				.offset1
 					.row
@@ -19,14 +19,16 @@ html
 								.row
 									.span9
 										.row
-											.span6
+											.span3
+												img.picShadow.profilePic(src="/img/profile.gif")
+
+											.span6(style="margin-left:-20px;")
 												h1.textShadow Randy Lubin
 												h2 San Francisco, CA
 												br
-												a(href="http://www.twitter.com/randylubin")<img src="http://twitter-badges.s3.amazonaws.com/follow_me-a.png" alt="Follow randylubin on Twitter"/>
-											.span3
-												img.pull-right.picShadow.profilePic(src="/img/profile.gif")
-
+												br
+												a(href="http://www.twitter.com/randylubin", target="_blank")<img src="http://twitter-badges.s3.amazonaws.com/follow_me-a.png" alt="Follow randylubin on Twitter"/>
+											
 					.row
 						.span4.offset3
 							ul.nav.nav-pills
@@ -43,33 +45,36 @@ html
 						.span10
 							.tab-content
 								#about.tab-pane.active
-									
 									P I love how technology changes the way people live, work, and play. The rate of innovation is accelerating and disrupting every industry, to the benefit of consumers. I try to be a part of that disruption. 
 									p When not working on my own ideas, I consult with tech startups. My favorite gigs involve product/corporate strategy or project management. I also enjoy wireframing, financial modeling, and creating pitch decks.
-									P In my free time you can find me hiking around the Bay Area and coding little experiments. 
+									P In my free time, you can find me hiking around the Bay Area and coding little experiments. 
 									P I grew up in Livingston, NJ and went to Washington University in St. Louis for undergrad. I graduated from Stanford's MBA program in 2011. 
+								
 								#projects.tab-pane
 									h3 Ecosystem
-									p This is an ecosystem simulator I build in Processing as a fun art experiment. Click on the screen to add more blue guys. Play with it <a href="/ecosystem/index.html">here</a>.
+									p This is an ecosystem simulator I build in Processing as a fun art experiment. Click on the screen to add more blue guys. Play with it <a href="/ecosystem/index.html" target="_blank">here</a>.
+
+									h3 Ditch the Conference
+									p In collaboration with Katie Johnson - this incredible new startup is a product of HypeUp Weekend.  Check it out <a href="http://ditchtheconference.com" target="_blank"> here</a>.
 
 									h3 Reddit Karma Visualization
-									p I built this with <a href="http://chrismaury.com"> Chris Maury</a>.  Upon entering your Reddit username, it will visualize the sources (subreddits) of your Karma.  You can check it out here: <a href="http://karma.nodester.com"> Karma!</a>
+									p I built this with <a href="http://chrismaury.com" target="_blank"> Chris Maury</a>.  Upon entering your Reddit username, it will visualize the sources (subreddits) of your Karma.  You can check it out here: <a href="http://karma.randylubin.com" target="_blank"> Karma!</a>
 
 									h3 Customer Lifetime Value Calculator
-									p I built this to strenthen my javascript skills.  Check out both <a href="/customer_lifetime_value/index.html"> the calculator</a> and the related <a href="http://blog.randylubin.com/post/15575039202/new-app-customer-lifetime-value/"> blog post</a>.
+									p I built this to strenthen my javascript skills.  Check out both <a href="/customer_lifetime_value/index.html" target="_blank"> the calculator</a> and the related <a href="http://blog.randylubin.com/post/15575039202/new-app-customer-lifetime-value/" target="_blank"> blog post</a>.
 
 									h3 The Singularity + Entrepreneurship
-									p Spring 2011 I gave an intro to the singularity talk at Stanford's Graduate School of Business.  Here are the <a href="http://vimeo.com/24373868"> video </a> and <a href="http://www.slideshare.net/randylubin/the-technological-singularity-and-entrepreneurship"> slides</a>.
+									p Spring 2011 I gave an intro to the singularity talk at Stanford's Graduate School of Business.  Here are the <a href="http://vimeo.com/24373868" target="_blank"> video </a> and <a href="http://www.slideshare.net/randylubin/the-technological-singularity-and-entrepreneurship" target="_blank"> slides</a>.
 
 									h3 Creative Commons
-									p I wrote the following papers for the class <em>Strategic Management of Nonprofits</em>. They all focus on a(href="https://creativecommons.org/") Creative Commons.  TA feedback is included at the end of the first two papers, in red text.
+									p I wrote the following papers for the class <em>Strategic Management of Nonprofits</em>. They all focus on <a href="https://creativecommons.org/" target="_blank">Creative Commons</a>.  TA feedback is included at the end of the first two papers, in red text.
 									ul 
 										li Analysis of the
-											a(href="/docs/CC_Mission.pdf")= " Mission Statement" 
+											a(href="/docs/CC_Mission.pdf", target="_blank")= " Mission Statement" 
 										li An appeal for funding to a (fake)
-											a(href="/docs/CC_Foundation.pdf")= " Foundation"
+											a(href="/docs/CC_Foundation.pdf", target="_blank")= " Foundation"
 										li A sample fundraising
-											a(href="/docs/CC_Letter.pdf")= " Letter"
+											a(href="/docs/CC_Letter.pdf", target="_blank")= " Letter"
 										
 
 									h3 Short Stories 
@@ -77,26 +82,29 @@ html
 
 									ul
 										li 
-											a(href="/fiction/upload.pdf") Upload  
+											a(href="/fiction/upload.pdf", target="_blank") Upload  
 										li 
-											a(href="/fiction/ambition.html") Ambition 
+											a(href="/fiction/ambition.html", target="_blank") Ambition 
 										li 
-											a(href="/fiction/groundless.html") Groundless 
+											a(href="/fiction/groundless.html", target="_blank") Groundless 
 										li 
-											a(href="/fiction/rock_paper_scissor.html") Rock, Paper, Scissor 
+											a(href="/fiction/rock_paper_scissor.html", target="_blank") Rock, Paper, Scissor 
 										
 
 								#blog.tab-pane
 									p I blog roughly once a week on topics ranging from strategy to coding to the future of technology.
-									p Check it out <a href="http://blog.randylubin.com"> here</a>
+									p Check it out <a href="http://blog.randylubin.com" target="_blank"> here</a>
 
 									p My most recent posts:
 
 									div <script src="http://feeds.feedburner.com/randylubin?format=sigpro" type="text/javascript" ></script><noscript><p>Subscribe to RSS headline updates from: <a href="http://feeds.feedburner.com/randylubin"></a></p> </noscript> 
 
 								#resume.tab-pane
-									p You can check out my old fashioned résumé <a href="/resume.pdf">here</a>.
-
+									p You can check out my old fashioned résumé <a href="/resume.pdf" target="_blank">here</a>.
+		.container
+			.row
+				.span12
+					p.pull-right.copyright &#169; Randy Lubin, 2012
 
 
 
