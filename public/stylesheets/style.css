@@ -10,6 +10,9 @@ body {
 p {
   font-size: 1.2em;
 }
+.slightIndent {
+  margin-left: 10px;
+}
 .nav>li>a:hover {
   text-decoration: none;
   background-color: #f0e68c;
