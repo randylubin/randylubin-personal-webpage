@@ -15,7 +15,9 @@ p {
 }
 .nav>li>a:hover {
   text-decoration: none;
-  background-color: #f0e68c;
+  color: #08c;
+  -webkit-box-shadow: inset 0px 0px 0px 2px #08c;
+  box-shadow: inset 0px 0px 0px 1px #08c;
 }
 hr {
   color: #000;
@@ -49,23 +51,15 @@ hr {
   -webkit-box-shadow: 0px 0px 10px 1px #000;
   box-shadow: 0px 0px 10px 1px #000;
 }
-.heroBorder {
-  -webkit-box-shadow: 0px 0px 0px 7px #aaa;
-  box-shadow: 0px 0px 0px 7px #aaa;
-  border-radius: 5px;
-}
 .heroOveride {
-  color: #32beff;
+  color: #0be;
   background-color: #000;
   background-image: url("/img/dark_dotted.png");
   background-repeat: repeat;
   padding-top: 30px;
   padding-bottom: 30px;
-  boarder: 4px groove #bfbfbf;
   text-shadow: 1px 1px 6px #000;
   filter: dropshadow(#000, 1, 1);
-  -webkit-box-shadow: inset 0px 0px 10px 0px #000;
-  box-shadow: inset 0px 0px 10px 0px #000;
 }
 .tab-content {
   padding-left: 20px;
