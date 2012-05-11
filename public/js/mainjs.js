@@ -9,4 +9,6 @@ $(document).ready(function() {
 		$("#creditfooter").remove();
 		console.log("done!");
 	}
+
+	$('.firstHide').delay(1800).fadeIn(500);
 });
