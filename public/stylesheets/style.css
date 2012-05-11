@@ -49,6 +49,11 @@ hr {
   -webkit-box-shadow: 0px 0px 10px 1px #000;
   box-shadow: 0px 0px 10px 1px #000;
 }
+.heroBorder {
+  -webkit-box-shadow: 0px 0px 0px 7px #aaa;
+  box-shadow: 0px 0px 0px 7px #aaa;
+  border-radius: 5px;
+}
 .heroOveride {
   color: #32beff;
   background-color: #000;
@@ -56,8 +61,11 @@ hr {
   background-repeat: repeat;
   padding-top: 30px;
   padding-bottom: 30px;
+  boarder: 4px groove #bfbfbf;
   text-shadow: 1px 1px 6px #000;
   filter: dropshadow(#000, 1, 1);
+  -webkit-box-shadow: inset 0px 0px 10px 0px #000;
+  box-shadow: inset 0px 0px 10px 0px #000;
 }
 .tab-content {
   padding-left: 20px;
