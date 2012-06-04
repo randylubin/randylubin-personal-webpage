@@ -7,6 +7,7 @@ html
 		script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
 		script(type='text/javascript', src='/js/bootstrap.min.js')
 		script(type='text/javascript', src='/js/bootstrap-tab.js')
+		script(type='text/javascript', src='/js/bootstrap-trans.js')
 		script(type='text/javascript', src='/js/mainjs.js')
 
 	body
@@ -44,12 +45,12 @@ html
 					.row
 						.span10
 							.tab-content
-								#about.tab-pane.active
+								#about.tab-pane.active.fade.in
 									P I love how technology changes the way people live, work, and play. The rate of innovation is accelerating and disrupting every industry, to the benefit of consumers. I try to be a part of that disruption. 
 									p I'm COO at <a href="http://meetings.io">Meetings.io</a>; their first product is an awesome, effortless video conferencing tool. In my free time, you can find me hiking around the Bay Area and coding little experiments. 
 									P I grew up in Livingston, NJ and went to Washington University in St. Louis for undergrad. I graduated from Stanford's MBA program in 2011. 
 								
-								#projects.tab-pane
+								#projects.tab-pane.fade
 									h2 Coding
 									p All my code is up on <a href="https://github.com/randylubin">GitHub</a>.
 									.slightIndent
@@ -98,7 +99,7 @@ html
 												a(href="/fiction/rock_paper_scissor.html", target="_blank") Rock, Paper, Scissor 
 										
 
-								#blog.tab-pane
+								#blog.tab-pane.fade
 									p I blog roughly once a week on topics ranging from strategy to coding to the future of technology.
 									p Check it out <a href="http://blog.randylubin.com" target="_blank"> here</a>
 
@@ -106,7 +107,7 @@ html
 
 									div <script src="http://feeds.feedburner.com/randylubin?format=sigpro" type="text/javascript" ></script><noscript><p>Subscribe to RSS headline updates from: <a href="http://feeds.feedburner.com/randylubin"></a></p> </noscript> 
 
-								#resume.tab-pane
+								#resume.tab-pane.fade
 									p You can check out my old fashioned résumé <a href="/resume.pdf" target="_blank">here</a>.
 		.container.firstHide
 			.row
