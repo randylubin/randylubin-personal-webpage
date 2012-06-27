@@ -41,5 +41,12 @@ app.get('/', function(req, res) {
 		});
 });
 
+app.get('/meeting',function(req, res) {
+    res.render('meeting', {
+      title: 'Randy Lubin - Meeting Room',
+      error: null
+    });
+});
+
 app.listen(7200);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
