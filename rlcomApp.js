@@ -48,5 +48,12 @@ app.get('/meeting',function(req, res) {
     });
 });
 
+app.get('/beta', function(req, res) {
+    res.render('beta', {
+      title: 'Randy Lubin Beta Site',
+      error: null
+    });
+});
+
 app.listen(7200);
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);
