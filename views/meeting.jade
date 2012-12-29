@@ -7,10 +7,9 @@ head
 	script(type='text/javascript', src='/js/bootstrap-trans.js')
 	script(type='text/javascript', src='/js/mainjs.js')
 
-body
-	.container
-		.row
-			.span10
-				h1.center Randy Lubin's Meeting Room
-				iframe(width="800", height="600", src="http://meetings.io/embed?room=9oq", frameborder="0", allowfullscreen)
+body(style="width:100%;")
+	div(style="margin: 0 auto 0 auto; text-align: center;")	
+		h1(style="margin: 30px auto 30px auto; text-align: center;") Randy's Meeting Room
+		div(style="margin: 0 auto 0 auto;")
+			iframe(width="900", height="700", src="http://meetings.io/embed?room=9oq", frameborder="0", allowfullscreen)
 				
