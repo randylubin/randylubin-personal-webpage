@@ -1,14 +1,17 @@
 !!! 5
 head
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta (name="HandheldFriendly" content="True")
+  meta (name="MobileOptimized" content="480")
+  meta (name="viewport" content="width=device-width")
   link(href='http://randylubin.com/stylesheets/bootstrap.min.css', rel='stylesheet', type='text/css')
+  link(href='http://randylubin.com/stylesheets/bootstrap-responsive.min.css', rel='stylesheet', type='text/css')
   link(href='/stylesheets/styleB.css', rel='stylesheet', type='text/css')
   link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro', rel='stylesheet', type='text/css')
   link(href='http://fonts.googleapis.com/css?family=Domine', rel='stylesheet', type='text/css')
   script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
   script(type='text/javascript', src='/js/bootstrap.min.js')
   script(type='text/javascript', src='/js/bootstrap-tab.js')
-  script(type='text/javascript', src='/js/bootstrap-trans.js')
-  script(type='text/javascript', src='/js/mainjs.js')
 
   body.test
     .container
@@ -37,7 +40,8 @@ head
           .tab-content
             #home.tab-pane.active
               p
-                | I love how technology improves how people live, work, and play. The  rate	of	innovation	is	accelerating,	disrupting	every
+                | I love the way technology improves how people live, work, and play. The
+                | rate	of	innovation	is	accelerating,	disrupting	every
                 | industry	and	creating	enormous	value	– I	try to drive	this disruption.
               p
                 | Most  recently	I	was COO of	Meetings.io and	negotiated	its	acquisition by	Jive	Software. In my spare time, I code up little experiments, hike, and play guitar.
@@ -148,3 +152,7 @@ head
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
+
+    if ($("#creditfooter")) {
+    $("#creditfooter").remove();
+    console.log("done!");}
