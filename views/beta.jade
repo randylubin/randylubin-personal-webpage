@@ -1,9 +1,7 @@
 !!! 5
 head
   meta(name="viewport", content="width=device-width, initial-scale=1.0")
-  meta (name="HandheldFriendly" content="True")
-  meta (name="MobileOptimized" content="480")
-  meta (name="viewport" content="width=device-width")
+  
   link(href='http://randylubin.com/stylesheets/bootstrap.min.css', rel='stylesheet', type='text/css')
   link(href='http://randylubin.com/stylesheets/bootstrap-responsive.min.css', rel='stylesheet', type='text/css')
   link(href='/stylesheets/styleB.css', rel='stylesheet', type='text/css')
@@ -19,11 +17,12 @@ head
         .span1.offset2.left
           .picBorder
             img.pic(src='http://randylubin.com/img/profile.gif')
-        .span5
+        .span5.right
           .accentText
+            .tabletPadding.visible-tablet
             h1
               a(href="#home", data-toggle="tab") Randy Lubin
-            h2 Consulting Entrepreneur
+            h2.visible-desktop Consulting Entrepreneur
       .row
         .navS.span1.offset2.accentText.left
           p
@@ -36,7 +35,7 @@ head
             a(href="#resume", data-toggle="tab") Résumé
           p
             a(href="https://twitter.com/randylubin") Twitter
-        .span5
+        .span5.right
           .tab-content
             #home.tab-pane.active
               p
