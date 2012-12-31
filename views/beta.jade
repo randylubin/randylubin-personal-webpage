@@ -26,7 +26,7 @@ head
       var text = new FizzyText();
       var gui = new dat.GUI();
       gui.addColor(text, 'bgc1').onChange(function(){
-        $(".1").css('background-color', text.bgc1)
+        $("body").css('background-color', text.bgc1)
       });
       gui.addColor(text, 'ac1').onChange(function(){
         $("body").find('.accentText').css('color', text.ac1);
