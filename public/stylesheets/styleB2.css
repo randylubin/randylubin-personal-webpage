@@ -1,11 +1,12 @@
 body {
-  background-color: #174a75;
+  background-color: #4682b4;
   color: #f5f5dc;
   font-family: 'Source Sans Pro', sans-serif;
 }
 p {
   font-size: 1.5em;
   line-height: 1.5em;
+  margin-bottom: 15px;
   font-family: 'Source Sans Pro', sans-serif;
 }
 a:link,
@@ -13,56 +14,51 @@ a:visited {
   color: #ffd8a3;
 }
 a:hover {
-  color: #a66c1d;
+  color: #ffca82;
   text-decoration: none;
 }
-li a {
-  font-size: 1.4em;
-}
 h1 {
-  font-size: 2.7em;
-  color: #f5f5dc;
+  font-size: 3em;
 }
 h2 {
-  font-size: 2.3em;
-  margin-top: -9px;
+  font-size: 2em;
 }
 .accentText {
-  color: #ffcd8c;
+  color: #ffb958;
 }
 .topBit {
-  font-family: 'Droid Serif', serif;
-  margin-top: 100px;
+  font-family: 'Domine', serif;
+  margin-top: 40px;
   margin-bottom: 15px;
 }
 .navS p {
   font-size: 1.35em;
-  font-family: 'Droid Serif', serif;
+  font-family: 'Domine', serif;
   margin-top: 1px;
   margin-bottom: 12px;
 }
 .accentText a:link,
-.accentText a:visited {
-  color: #ffcd8c;
-  font-size: 1.4em;
+.accentText a:visited,
+h4 {
+  color: #ffb958;
 }
 .accentText a:hover {
   color: #a66c1d;
   text-decoration: none;
-  font-size: 1.4em;
 }
 .pic {
-  width: 85px;
-  height: 85px;
+  width: 65px;
+  height: 65px;
   background-color: #808080;
-  margin-top: 7%;
-  margin-left: 18%;
+  margin-top: 25%;
   -webkit-border-radius: 100px;
   border-radius: 100px;
+  -webkit-box-shadow: 0px 0px 0px 2px #f5f5dc;
+  box-shadow: 0px 0px 0px 2px;
 }
 .left {
   margin-right: 20px;
-  width: 90px;
+  width: 70px;
 }
 .slightIndent {
   margin-left: 10px;

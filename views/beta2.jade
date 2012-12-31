@@ -1,0 +1,310 @@
+!!! 5
+head
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  
+  link(href='http://randylubin.com/stylesheets/bootstrap.min.css', rel='stylesheet', type='text/css')
+  link(href='http://randylubin.com/stylesheets/bootstrap-responsive.min.css', rel='stylesheet', type='text/css')
+  link(href='/stylesheets/styleB2.css', rel='stylesheet', type='text/css')
+  link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro', rel='stylesheet', type='text/css')
+  link(href='http://fonts.googleapis.com/css?family=Domine', rel='stylesheet', type='text/css')
+  script(type='text/javascript', src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+  script(type='text/javascript', src='/js/bootstrap.min.js')
+  script(type='text/javascript', src='/js/bootstrap-tab.js')
+  script(type="text/javascript", src="/js/dat.gui.min.js")
+  script(type="text/javascript", src="/js/dat.color.min.js")
+  script(type="text/javascript")
+    var FizzyText = function() {
+      this.bgc1 = '#174A75';
+      this.bgc2 = '#174A75';
+      this.ac1 = '#ffdaaa';
+      this.ac2 = '#ffd091';
+      this.tc1 = '#F5F5DC';
+      this.tc2 = '#F5F5DC';
+      // Define render logic ...
+    };
+
+    window.onload = function() {
+      var text = new FizzyText();
+      var gui = new dat.GUI();
+      gui.addColor(text, 'bgc1').onChange(function(){
+        $(".1").css('background-color', text.bgc1)
+      });
+      gui.addColor(text, 'ac1').onChange(function(){
+        $(".1").find('.accentText').css('color', text.ac1);
+        $(".1").find('h4').css('color', text.ac1)
+      });
+      gui.addColor(text, 'tc1').onChange(function(){
+        $(".1").find('p').css('color', text.tc1)
+      });
+      gui.addColor(text, 'bgc2').onChange(function(){
+        $(".2").css('background-color', text.bgc2)
+      });
+      gui.addColor(text, 'ac2').onChange(function(){
+        $(".2").find('.accentText').css('color', text.ac2);
+        $(".2").find('h4').css('color', text.ac2)
+      });
+      gui.addColor(text, 'tc2').onChange(function(){
+        $(".2").find('p').css('color', text.tc2)
+      });
+    };
+
+  body
+    .1(style='padding-bottom:30px;')    
+      .container
+        .row.topBit
+          .span1.offset2.left
+            .picBorder
+              img.pic(src='http://randylubin.com/img/profile.gif')
+          .span5.right
+            .accentText
+              .tabletPadding.visible-tablet
+              h1 Randy Lubin
+              h2.visible-desktop Consulting Entrepreneur
+        .row
+          .navS.span1.offset2.accentText.left
+            h4 Blog
+            h4 Projects
+            h4 Bio          
+            h4 Résumé
+            h4 Twitter
+          .span5.right
+            .tab-content
+              #home.tab-pane.active
+                p
+                  | I love the way technology improves how people live, work, and play. The
+                  | rate	of	innovation	is	accelerating,	disrupting	every
+                  | industry	and	creating	enormous	value	– I	try to drive	this disruption.
+                p
+                  | Most  recently	I	was COO of	Meetings.io and	negotiated	its	acquisition by	Jive	Software. In my spare time, I code up little experiments, hike, and play guitar.
+                p
+                  | I grew up in Livingston, NJ and went to Washington University in St. Louis for undergrad. I graduated from Stanford's MBA program in 2011.
+              #bio.tab-pane
+                p 
+                  | I grew up in Livingston, NJ and went to Washington University in St. Louis for an undergrad
+                  | degree in business. While on campus, I led the committee responsible
+                  | for throwing large music festivals and helped started a music related non-profit.
+                p
+                  | After graduating from WashU, I entered Stanford's MBA program.
+                  | I focused on technology and entrepreneurship, learning in the
+                  | classroom and through consulting gigs with local startups.
+                  | I also started teaching myself to code.
+                p
+                  | After graduating from Stanford, I gave myself time to
+                  | work on my own startup. I spent several months iterating
+                  | through ideas, continuing to hone my coding skills, and consulting
+                  | for SF startups.
+                p
+                  | Over the months, I consulted twice with the Meetings.io team,
+                  | and helped them pivot to became the current product. In the
+                  | spring of 2012 they asked me to join full time as the "business
+                  | guy" and I gladly accepted.
+                p
+                  | As Meetings.io's COO, I had my hands in Marketing/PR, Strategy,
+                  | Finances, Legal, and even did a bit of coding. By fall 2012 most
+                  | of my time was dedicated to M&A discussion with a potential acquirer: Jive Software.
+                  | We sold to Jive in November 2012 and I am currently there as the Product Manager for the Real-Time (chat, video, etc) team.
+                p
+                  | In my spare time I code up little experiments, blog, hike,
+                  | improvise on guitar, and play boardgames. I also advise
+                  | entrepreneurs and give talks on entrepreneurship and technology.
+              #projects.tab-pane
+                h2.projectHeading Coding
+                p All my code is on <a href="https://github.com/randylubin">GitHub</a>.
+                .slightIndent
+                  h3 Ecosystem
+                  p This is an ecosystem simulator I build in Processing as a fun art experiment. Click on the screen to add more blue guys. Play with it <a href="/ecosystem/index.html" target="_blank">here</a>.
+
+                  h3 Ditch the Conference
+                  p In collaboration with Katie Johnson - this incredible new startup is a product of HypeUp Weekend.  Check it out <a href="http://ditchtheconference.com" target="_blank"> here</a>.
+
+                  h3 Reddit Karma Visualization
+                  p I built this with <a href="http://chrismaury.com" target="_blank"> Chris Maury</a>.  Upon entering your Reddit username, it will visualize the sources (subreddits) of your Karma.  You can check it out here: <a href="http://karma.randylubin.com" target="_blank"> Karma!</a>
+
+                  //h3 Steal This Idea
+                  //p Built as a way to learn MongoDB - try it <a href="http://stealthisidea.randylubin.com">here</a>.
+
+                  h3 Customer LTV Calculator
+                  p I built this to strenthen my javascript skills.  Check out both <a href="/customer_lifetime_value/index.html" target="_blank"> the calculator</a> and the related <a href="http://blog.randylubin.com/post/15575039202/new-app-customer-lifetime-value/" target="_blank"> blog post</a>.
+
+                h2 Other
+                .slightIndent
+                  h3 The Singularity + Entrepreneurship
+                  p Spring 2011 I gave an intro to the singularity talk at Stanford's Graduate School of Business.  Here are the <a href="http://vimeo.com/24373868" target="_blank"> video </a> and <a href="http://www.slideshare.net/randylubin/the-technological-singularity-and-entrepreneurship" target="_blank"> slides</a>.
+
+                  h3 Creative Commons
+                  p I wrote the following papers for the class <em>Strategic Management of Nonprofits</em>. They all focus on <a href="https://creativecommons.org/" target="_blank">Creative Commons</a>.  TA feedback is included at the end of the first two papers, in red text.
+                  ul 
+                    li Analysis of the
+                      a(href="/docs/CC_Mission.pdf", target="_blank")= " Mission Statement" 
+                    li An appeal for funding to a (fake)
+                      a(href="/docs/CC_Foundation.pdf", target="_blank")= " Foundation"
+                    li A sample fundraising
+                      a(href="/docs/CC_Letter.pdf", target="_blank")= " Letter"
+                    
+
+                  h3 Short Stories 
+                  p Here are some short stories I wrote in college
+
+                  ul
+                    li 
+                      a(href="/fiction/upload.pdf", target="_blank") Upload  
+                    li 
+                      a(href="/fiction/time-sickness.pdf", target="_blank") Time-Sickness
+                    li 
+                      a(href="/fiction/ambition.html", target="_blank") Ambition 
+                    li 
+                      a(href="/fiction/groundless.html", target="_blank") Groundless 
+                    li 
+                      a(href="/fiction/rock_paper_scissor.html", target="_blank") Rock, Paper, Scissor
+                    li 
+                      a(href="/fiction/acapulco.pdf", target="_blank") The Vampire of Acapulco
+                    li 
+                      a(href="/fiction/alchemy.pdf", target="_blank") Alchemy \(My Choose Your Own Adventure)
+              #blog.tab-pane
+                p I blog roughly once a week on topics including startups, business strategy, games, coding, and the future of technology.
+                p Check it out <a href="http://blog.randylubin.com" target="_blank"> here</a>.
+
+                p My most recent posts:
+
+                div <script src="http://feeds.feedburner.com/randylubin?format=sigpro" type="text/javascript" ></script><noscript><p>Subscribe to RSS headline updates from: <a href="http://feeds.feedburner.com/randylubin"></a></p> </noscript> 
+
+              #resume.tab-pane
+                p You can check out my old fashioned résumé <a href="/resume.pdf" target="_blank">here</a>.    
+            
+    .2(style='padding-bottom:30px;')
+      .container
+        .row.topBit
+          .span1.offset2.left
+            .picBorder
+              img.pic(src='http://randylubin.com/img/profile.gif')
+          .span5.right
+            .accentText
+              .tabletPadding.visible-tablet
+              h1 Randy Lubin
+              h2.visible-desktop Consulting Entrepreneur
+        .row
+          .navS.span1.offset2.accentText.left
+            h4 Blog
+            h4 Projects
+            h4 Bio          
+            h4 Résumé
+            h4 Twitter
+          .span5.right
+            .tab-content
+              #home.tab-pane.active
+                p
+                  | I love the way technology improves how people live, work, and play. The
+                  | rate  of  innovation  is  accelerating, disrupting  every
+                  | industry  and creating  enormous  value – I try to drive  this disruption.
+                p
+                  | Most  recently  I was COO of  Meetings.io and negotiated  its acquisition by  Jive  Software. In my spare time, I code up little experiments, hike, and play guitar.
+                p
+                  | I grew up in Livingston, NJ and went to Washington University in St. Louis for undergrad. I graduated from Stanford's MBA program in 2011.
+              #bio.tab-pane
+                p 
+                  | I grew up in Livingston, NJ and went to Washington University in St. Louis for an undergrad
+                  | degree in business. While on campus, I led the committee responsible
+                  | for throwing large music festivals and helped started a music related non-profit.
+                p
+                  | After graduating from WashU, I entered Stanford's MBA program.
+                  | I focused on technology and entrepreneurship, learning in the
+                  | classroom and through consulting gigs with local startups.
+                  | I also started teaching myself to code.
+                p
+                  | After graduating from Stanford, I gave myself time to
+                  | work on my own startup. I spent several months iterating
+                  | through ideas, continuing to hone my coding skills, and consulting
+                  | for SF startups.
+                p
+                  | Over the months, I consulted twice with the Meetings.io team,
+                  | and helped them pivot to became the current product. In the
+                  | spring of 2012 they asked me to join full time as the "business
+                  | guy" and I gladly accepted.
+                p
+                  | As Meetings.io's COO, I had my hands in Marketing/PR, Strategy,
+                  | Finances, Legal, and even did a bit of coding. By fall 2012 most
+                  | of my time was dedicated to M&A discussion with a potential acquirer: Jive Software.
+                  | We sold to Jive in November 2012 and I am currently there as the Product Manager for the Real-Time (chat, video, etc) team.
+                p
+                  | In my spare time I code up little experiments, blog, hike,
+                  | improvise on guitar, and play boardgames. I also advise
+                  | entrepreneurs and give talks on entrepreneurship and technology.
+              #projects.tab-pane
+                h2.projectHeading Coding
+                p All my code is on <a href="https://github.com/randylubin">GitHub</a>.
+                .slightIndent
+                  h3 Ecosystem
+                  p This is an ecosystem simulator I build in Processing as a fun art experiment. Click on the screen to add more blue guys. Play with it <a href="/ecosystem/index.html" target="_blank">here</a>.
+
+                  h3 Ditch the Conference
+                  p In collaboration with Katie Johnson - this incredible new startup is a product of HypeUp Weekend.  Check it out <a href="http://ditchtheconference.com" target="_blank"> here</a>.
+
+                  h3 Reddit Karma Visualization
+                  p I built this with <a href="http://chrismaury.com" target="_blank"> Chris Maury</a>.  Upon entering your Reddit username, it will visualize the sources (subreddits) of your Karma.  You can check it out here: <a href="http://karma.randylubin.com" target="_blank"> Karma!</a>
+
+                  //h3 Steal This Idea
+                  //p Built as a way to learn MongoDB - try it <a href="http://stealthisidea.randylubin.com">here</a>.
+
+                  h3 Customer LTV Calculator
+                  p I built this to strenthen my javascript skills.  Check out both <a href="/customer_lifetime_value/index.html" target="_blank"> the calculator</a> and the related <a href="http://blog.randylubin.com/post/15575039202/new-app-customer-lifetime-value/" target="_blank"> blog post</a>.
+
+                h2 Other
+                .slightIndent
+                  h3 The Singularity + Entrepreneurship
+                  p Spring 2011 I gave an intro to the singularity talk at Stanford's Graduate School of Business.  Here are the <a href="http://vimeo.com/24373868" target="_blank"> video </a> and <a href="http://www.slideshare.net/randylubin/the-technological-singularity-and-entrepreneurship" target="_blank"> slides</a>.
+
+                  h3 Creative Commons
+                  p I wrote the following papers for the class <em>Strategic Management of Nonprofits</em>. They all focus on <a href="https://creativecommons.org/" target="_blank">Creative Commons</a>.  TA feedback is included at the end of the first two papers, in red text.
+                  ul 
+                    li Analysis of the
+                      a(href="/docs/CC_Mission.pdf", target="_blank")= " Mission Statement" 
+                    li An appeal for funding to a (fake)
+                      a(href="/docs/CC_Foundation.pdf", target="_blank")= " Foundation"
+                    li A sample fundraising
+                      a(href="/docs/CC_Letter.pdf", target="_blank")= " Letter"
+                    
+
+                  h3 Short Stories 
+                  p Here are some short stories I wrote in college
+
+                  ul
+                    li 
+                      a(href="/fiction/upload.pdf", target="_blank") Upload  
+                    li 
+                      a(href="/fiction/time-sickness.pdf", target="_blank") Time-Sickness
+                    li 
+                      a(href="/fiction/ambition.html", target="_blank") Ambition 
+                    li 
+                      a(href="/fiction/groundless.html", target="_blank") Groundless 
+                    li 
+                      a(href="/fiction/rock_paper_scissor.html", target="_blank") Rock, Paper, Scissor
+                    li 
+                      a(href="/fiction/acapulco.pdf", target="_blank") The Vampire of Acapulco
+                    li 
+                      a(href="/fiction/alchemy.pdf", target="_blank") Alchemy \(My Choose Your Own Adventure)
+              #blog.tab-pane
+                p I blog roughly once a week on topics including startups, business strategy, games, coding, and the future of technology.
+                p Check it out <a href="http://blog.randylubin.com" target="_blank"> here</a>.
+
+                p My most recent posts:
+
+                div <script src="http://feeds.feedburner.com/randylubin?format=sigpro" type="text/javascript" ></script><noscript><p>Subscribe to RSS headline updates from: <a href="http://feeds.feedburner.com/randylubin"></a></p> </noscript> 
+
+              #resume.tab-pane
+                p You can check out my old fashioned résumé <a href="/resume.pdf" target="_blank">here</a>.    
+ 
+
+  script 
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-21059307-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+    if ($("#creditfooter")) {
+    $("#creditfooter").remove();
+    console.log("done!");}
