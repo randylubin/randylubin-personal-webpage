@@ -2,6 +2,7 @@ body {
   background-color: #174a75;
   color: #f5f5dc;
   font-family: 'Source Sans Pro', sans-serif;
+  position: absolute;
 }
 p {
   font-size: 1.5em;
