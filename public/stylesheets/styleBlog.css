@@ -1,5 +1,5 @@
 body {
-  background-color: #4682b4;
+  background-color: #174a75;
   color: #f5f5dc;
   font-family: 'Source Sans Pro', sans-serif;
 }
@@ -24,7 +24,7 @@ h2 {
 }
 .accentText,
 .accentText h1 {
-  color: #ffb958;
+  color: #ffcd8c;
 }
 .topBit {
   font-family: 'Domine', serif;
@@ -39,7 +39,7 @@ h2 {
 }
 .accentText a:link,
 .accentText a:visited {
-  color: #ffb958;
+  color: #ffcd8c;
 }
 .accentText a:hover {
   color: #a66c1d;

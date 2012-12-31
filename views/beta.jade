@@ -40,15 +40,19 @@ head
   body.test
     .container
       .row.topBit
-        .span1.offset2.left
+        .span2.visible-phone
+          .picBorder
+            img.picMob.pic(src='http://randylubin.com/img/profile.gif')
+        .span1.offset2.left.visible-tablet.visible-desktop
           .picBorder
             img.pic(src='http://randylubin.com/img/profile.gif')
         .span6.right
           .accentText
-            .tabletPadding.visible-tablet
+            //.tabletPadding.visible-tablet
             h1
               a.accentText(href="#home", data-toggle="tab") Randy Lubin
             h2.visible-desktop Consulting Entrepreneur
+            h2.visible-tablet.visible-phone(style="font-size:2em;") Cosulting Entrepreneur
       .row
         .navS.span1.offset2.accentText.left
           p

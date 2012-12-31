@@ -61,6 +61,15 @@ h2 {
   -webkit-border-radius: 100px;
   border-radius: 100px;
 }
+.picMob {
+  width: 270px;
+  height: 270px;
+  margin-top: -40px;
+  margin-left: 10%;
+  margin-bottom: 10%;
+  -webkit-border-radius: 200px;
+  border-radius: 200px;
+}
 .left {
   margin-right: 20px;
   width: 90px;
