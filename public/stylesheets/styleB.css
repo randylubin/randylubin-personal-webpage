@@ -1,6 +1,6 @@
 body {
-  background-color: #3873a4;
-  color: #f5f5dc;
+  background-color: #091a28;
+  color: #e6e6e6;
   font-family: 'Source Sans Pro', sans-serif;
   position: absolute;
 }
@@ -11,10 +11,10 @@ p {
 }
 a:link,
 a:visited {
-  color: #ffd8a3;
+  color: #a0cbf0;
 }
 a:hover {
-  color: #a66c1d;
+  color: #3086cf;
   text-decoration: none;
 }
 li a {
@@ -29,7 +29,7 @@ h2 {
   margin-top: -9px;
 }
 .accentText {
-  color: #ffdd8c;
+  color: #a0cbf0;
 }
 .topBit {
   font-family: 'Droid Serif', serif;
@@ -44,31 +44,30 @@ h2 {
 }
 .accentText a:link,
 .accentText a:visited {
-  color: #ffdd8c;
+  color: #a0cbf0;
   font-size: 1.4em;
 }
 .accentText a:hover {
-  color: #a66c1d;
+  color: #3086cf;
   text-decoration: none;
   font-size: 1.4em;
 }
 .pic {
-  width: 85px;
-  height: 85px;
-  background-color: #808080;
+  width: 100%;
+  height: 100%;
+  background-color: #091a28;
   margin-top: 7%;
-  margin-left: 18%;
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
+  margin-left: 8%;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 .picMob {
-  width: 270px;
-  height: 270px;
+  width: 100%;
+  height: 100%;
   margin-top: -40px;
-  margin-left: 10%;
   margin-bottom: 10%;
-  -webkit-border-radius: 200px;
-  border-radius: 200px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 .left {
   margin-right: 20px;

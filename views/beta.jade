@@ -9,8 +9,8 @@ head
   meta(property="fb:admins"), content="3108886")
   meta(property="og:description"), content="Randy Lubin's personal website. Randy lives in San Francisco and is all about entrepreneurship.")
 
-  link(href='http://randylubin.com/stylesheets/bootstrap.min.css', rel='stylesheet', type='text/css')
-  link(href='http://randylubin.com/stylesheets/bootstrap-responsive.min.css', rel='stylesheet', type='text/css')
+  link(href='/stylesheets/bootstrap.min.css', rel='stylesheet', type='text/css')
+  link(href='/stylesheets/bootstrap-responsive.min.css', rel='stylesheet', type='text/css')
   link(href='/stylesheets/styleB.css', rel='stylesheet', type='text/css')
   link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro', rel='stylesheet', type='text/css')
   link(href='http://fonts.googleapis.com/css?family=Domine', rel='stylesheet', type='text/css')
@@ -23,9 +23,9 @@ head
   script(type="text/javascript", src="/js/dat.color.min.js")
   script(type="text/javascript")
     var FizzyText = function() {
-      this.bgc1 = '#174a75';
-      this.ac1 = '#ffdd8c';
-      this.tc1 = '#F5F5DC';
+      this.bgc1 = '#091a28';
+      this.ac1 = '#91b8d9';
+      this.tc1 = '#e6e6e6';
       // Define render logic ...
     };
 
@@ -44,22 +44,26 @@ head
       });
     };
 
-  body.test
-    .container
-      .row.topBit
-        .span2.visible-phone
-          .picBorder
+  body
+    .container.test
+      .row.topBit.visible-phone(style="margin-bottom:-100px;")
+        .span2
+          .picBorder(style="width:200px;")
             img.picMob.pic(src='http://randylubin.com/img/profile.gif')
+      .row.topBit
         .span1.offset2.left.visible-tablet.visible-desktop
           .picBorder
             img.pic(src='http://randylubin.com/img/profile.gif')
         .span6.right
           .accentText
             //.tabletPadding.visible-tablet
-            h1
+            h1.visible-desktop.visible-tablet
               a.accentText(href="#home", data-toggle="tab") Randy Lubin
+            h1.visible-phone
+              a(style="font-size:1em;").accentText(href="#home", data-toggle="tab") Randy Lubin
             h2.visible-desktop Consulting Entrepreneur
-            h2.visible-tablet.visible-phone(style="font-size:2em;") Cosulting Entrepreneur
+            h2.visible-tablet(style="font-size:1.9em;") Consulting Entrepreneur
+            h2.visible-phone(style="font-size:1.3em;") Consulting Entrepreneur
       .row
         .navS.span1.offset2.accentText.left
           p
