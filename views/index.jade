@@ -155,19 +155,17 @@ body
 
             #resume.tab-pane
               p You can check out my old fashioned résumé <a href="/resume.pdf" target="_blank">here</a>.    
-            
+    script(type='text/javascript')
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-21059307-1']);
+      _gaq.push(['_trackPageview']);
 
-  script 
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-21059307-1']);
-    _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
-    (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
-
-    if ($("#creditfooter")) {
-    $("#creditfooter").remove();
-    console.log("done!");}
+      if ($("#creditfooter")) {
+      $("#creditfooter").remove();
+      console.log("done!");}
