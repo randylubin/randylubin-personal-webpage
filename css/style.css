@@ -1,0 +1,58 @@
+body {
+  padding-top: 120px;
+  font-family: ghandi-sans;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: red;
+}
+
+@font-face {
+    font-family: ghandi-sans;
+    src: url(GandhiSans-Regular.otf);
+}
+
+@font-face {
+	font-family: BebasNeue;
+	src: url(BebasNeue.otf);
+}
+
+h1, h2, h3, h4 {
+	font-family: BebasNeue;
+	color: #2C3E50
+}
+
+.navbar-brand {
+	color: #18bc9c
+}
+
+.navbar-padding {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: #2c3e50;
+}
+
+ul {
+	padding-left: 15px;
+}
+
+.headline>a {
+	color: black;
+}
+
+.divider-div {
+	width: 100px;
+	border-color: #2c3e50;
+	border-bottom-style: solid;
+    border-width: 1px;
+    margin-bottom: 10px;
+}
+
+.spacing-div {
+	margin-top: 50px;
+}
