@@ -56,3 +56,8 @@ ul {
 .spacing-div {
 	margin-top: 50px;
 }
+
+a img {
+	height: 140px;
+	width: 140px;
+}
