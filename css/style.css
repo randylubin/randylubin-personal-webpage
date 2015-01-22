@@ -45,6 +45,14 @@ ul {
 	color: black;
 }
 
+.headline>i {
+	width:17px;
+}
+
+.feedburnerFeedBlock ul li {
+	list-style-type: square;
+}
+
 .divider-div {
 	width: 100px;
 	border-color: #2c3e50;
