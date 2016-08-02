@@ -1,0 +1,72 @@
+body {
+  background-color: #4682b4;
+  color: #f5f5dc;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  margin-bottom: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+a:link,
+a:visited {
+  color: #ffd8a3;
+}
+a:hover {
+  color: #ffca82;
+  text-decoration: none;
+}
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2em;
+}
+.accentText {
+  color: #ffb958;
+}
+.topBit {
+  font-family: 'Domine', serif;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.navS p {
+  font-size: 1.35em;
+  font-family: 'Domine', serif;
+  margin-top: 1px;
+  margin-bottom: 12px;
+}
+.accentText a:link,
+.accentText a:visited,
+h4 {
+  color: #ffb958;
+}
+.accentText a:hover {
+  color: #a66c1d;
+  text-decoration: none;
+}
+.pic {
+  width: 65px;
+  height: 65px;
+  background-color: #808080;
+  margin-top: 25%;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-box-shadow: 0px 0px 0px 2px #f5f5dc;
+  box-shadow: 0px 0px 0px 2px;
+}
+.left {
+  margin-right: 20px;
+  width: 70px;
+}
+.slightIndent {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+.projectHeading {
+  margin-top: -5px;
+}
+.tabletPadding {
+  height: 18px;
+}
