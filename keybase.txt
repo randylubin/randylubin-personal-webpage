@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/rl
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://randylubin.com
+  * I am rl (https://keybase.io/rl) on keybase.
+  * I have a public key ASBlUitC0EhAl3LJZLhIG-bOnaItFzAtrS-QF3KBwCUHago
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01011e0255de8e790640fbe32b0fa0c0e9bf0bb97afce0ca75ee930177a2e17d29650a",
+      "host": "keybase.io",
+      "kid": "012065522b42d048409772c964b8481be6ce9da22d17302dad2f90177281c025076a0a",
+      "uid": "00cc87d8c2ab08f381a40a47fad9b800",
+      "username": "rl"
+    },
+    "merkle_root": {
+      "ctime": 1511910459,
+      "hash": "fe12f0ae35184ba7d9438e56a4089313b3530a53002fba4fc3fcf5ccc090e3d704ceaef00ce30bc90e0fd0582e2b89465d4f8821bd172e75cec8fe04690e52e3",
+      "hash_meta": "faa6b9acd7e2fcfac59ac187893e8561b56ad822e554607d23bc81ca70c7914e",
+      "seqno": 1760320
+    },
+    "service": {
+      "hostname": "randylubin.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.36"
+  },
+  "ctime": 1511910503,
+  "expire_in": 504576000,
+  "prev": "22406b93a3597263a80d3eeab072833e83b7a4e158ac32530a3a995019bee1c1",
+  "seqno": 29,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgZVIrQtBIQJdyyWS4SBvmzp2iLRcwLa0vkBdygcAlB2oKp3BheWxvYWTFA0F7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxMWUwMjU1ZGU4ZTc5MDY0MGZiZTMyYjBmYTBjMGU5YmYwYmI5N2FmY2UwY2E3NWVlOTMwMTc3YTJlMTdkMjk2NTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwNjU1MjJiNDJkMDQ4NDA5NzcyYzk2NGI4NDgxYmU2Y2U5ZGEyMmQxNzMwMmRhZDJmOTAxNzcyODFjMDI1MDc2YTBhIiwidWlkIjoiMDBjYzg3ZDhjMmFiMDhmMzgxYTQwYTQ3ZmFkOWI4MDAiLCJ1c2VybmFtZSI6InJsIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTExOTEwNDU5LCJoYXNoIjoiZmUxMmYwYWUzNTE4NGJhN2Q5NDM4ZTU2YTQwODkzMTNiMzUzMGE1MzAwMmZiYTRmYzNmY2Y1Y2NjMDkwZTNkNzA0Y2VhZWYwMGNlMzBiYzkwZTBmZDA1ODJlMmI4OTQ2NWQ0Zjg4MjFiZDE3MmU3NWNlYzhmZTA0NjkwZTUyZTMiLCJoYXNoX21ldGEiOiJmYWE2YjlhY2Q3ZTJmY2ZhYzU5YWMxODc4OTNlODU2MWI1NmFkODIyZTU1NDYwN2QyM2JjODFjYTcwYzc5MTRlIiwic2Vxbm8iOjE3NjAzMjB9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoicmFuZHlsdWJpbi5jb20iLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zNiJ9LCJjdGltZSI6MTUxMTkxMDUwMywiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiIyMjQwNmI5M2EzNTk3MjYzYTgwZDNlZWFiMDcyODMzZTgzYjdhNGUxNThhYzMyNTMwYTNhOTk1MDE5YmVlMWMxIiwic2Vxbm8iOjI5LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQGrLbVlXX2r4AgcrYssEZ6xsLrAPNtpjeOvE+cteaxEFE+wrB6nafqn9BHsgJq/l32N0IS8DWmZh/9olpcVT/Aioc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCD6ksQ982rVBLMZiRsnuOq7UQMV6/3tPQzkXZI2OWduLKN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/rl
+
+==================================================================
